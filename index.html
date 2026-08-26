@@ -97,6 +97,9 @@
   /* ---------- Sections ---------- */
   .sec{padding:56px 0}
   .sec-tag{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--deep-teal);margin-bottom:14px;font-weight:600}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--teal-gray);background:none;border:none;cursor:pointer;padding:0;margin-bottom:22px;font-family:inherit}
+  .back-link:hover{color:var(--deep-teal)}
+  .back-link i{font-size:14px}
   h2{font-family:var(--display);font-size:32px;font-weight:400;font-style:italic;letter-spacing:-.01em;line-height:1.1;margin-bottom:14px}
   h2 em{font-style:normal;color:var(--deep-teal)}
   .sec-intro{font-size:15.5px;color:var(--teal-gray);max-width:650px;line-height:1.6;margin-bottom:36px}
@@ -322,6 +325,7 @@
       <!-- Approach header: "Every team is a component" drops here -->
       <div class="hero" style="padding:48px 0 44px">
         <div class="wrap">
+          <button class="back-link" onclick="go('overview')"><i class="ri-arrow-left-line"></i> Back to overview</button>
           <div class="kicker">The approach</div>
           <h1>Every team is a component. <em>Every component has a job.</em></h1>
           <p class="lede">One team, working in tandem with the technology, toward one shared goal. Four rings, one inside the other, each serving what sits at the centre.</p>
@@ -515,6 +519,7 @@
     <section class="panel" data-panel="sessions">
       <div class="wrap">
         <div class="sec">
+          <button class="back-link" onclick="go('overview')"><i class="ri-arrow-left-line"></i> Back to overview</button>
           <div class="sec-tag">Sessions</div>
           <h2>Every session, <em>captured</em></h2>
           <p class="sec-intro">Each session is logged here with its recording, a short summary, and the worksheet that goes with it. If you join later or miss one, this is how you catch up.</p>
@@ -525,24 +530,24 @@
             </div>
             <div class="ses-row">
               <div class="sname">Session 01 &middot; Know Your Car</div>
-              <div class="sdate">Date not stated</div>
+              <div class="sdate">Thu, Jun 18, 2026</div>
+              <div><a class="link-chip" href="https://wealthcoportal-my.sharepoint.com/personal/bryton_wealthco_ca/_layouts/15/viewer.aspx?sourcedoc={41261076-ea42-4161-a756-e3c512ed7820}" target="_blank">View</a></div>
               <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
+              <div><a class="link-chip" href="https://wealthcoportal.sharepoint.com/:w:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20One/Session%20One%20Worksheet/Session-01-Know-Your-Car-Worksheet.docx?d=wf3b1b3db318d425e97867d85f2125265&csf=1&web=1&e=NCAcJU" target="_blank">View</a></div>
             </div>
             <div class="ses-row">
               <div class="sname">Session 02 &middot; The Pit Wall</div>
               <div class="sdate">Thu, Jul 2, 2026</div>
+              <div><a class="link-chip" href="https://wealthcoportal-my.sharepoint.com/personal/bryton_wealthco_ca/_layouts/15/viewer.aspx?sourcedoc={d7a485f1-8198-436f-b74e-1c7786e67a27}" target="_blank">View</a></div>
               <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
+              <div><a class="link-chip" href="https://wealthcoportal.sharepoint.com/:w:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20Two/Session%20Two%20Worksheet/Session-02-The-Pit-Wall-Worksheet.docx?d=w74a9bb5a1ff342a8bf456e138d2a1e14&csf=1&web=1&e=gV2rGO" target="_blank">View</a></div>
             </div>
             <div class="ses-row">
-              <div class="sname">Session 03</div>
-              <div class="sdate">Date TBC</div>
+              <div class="sname">Session 03 &middot; The Octopus in the Cockpit</div>
+              <div class="sdate">Thu, Jul 16, 2026</div>
+              <div><a class="link-chip" href="https://wealthcoportal-my.sharepoint.com/personal/jazzy_reyes_wealthco_ca/_layouts/15/viewer.aspx?sourcedoc={ba9d3179-4c6a-4f47-b998-2a9abd1cac57}" target="_blank">View</a></div>
               <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
-              <div><span class="link-chip empty">Add link</span></div>
+              <div><a class="link-chip" href="https://wealthcoportal.sharepoint.com/:w:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20Three/Worksheet/Session-03-The-Octopus-in-the-Cockpit-Worksheet.docx?d=w942e35d92bb64a708ffe50378e64c10e&csf=1&web=1&e=b7gPer" target="_blank">View</a></div>
             </div>
           </div>
           <p class="src-tag">Session names and the Session 02 date are from the Session 01 deck. Delivery status not confirmed, links pending.</p>
@@ -554,6 +559,7 @@
     <section class="panel" data-panel="resources">
       <div class="wrap">
         <div class="sec">
+          <button class="back-link" onclick="go('overview')"><i class="ri-arrow-left-line"></i> Back to overview</button>
           <div class="sec-tag">Resources</div>
           <h2>What to <em>draw on</em></h2>
           <p class="sec-intro">The guides and frameworks worth keeping close. Grouped so you can find the right one fast. Links to be added.</p>
@@ -561,16 +567,16 @@
           <div class="res-group">
             <h3>Claude</h3>
             <div class="res-list">
-              <a class="res"><i class="ri-sparkling-2-line"></i><div><h4>Skills, connectors, and plugins</h4><p>Three ways to extend what Claude can do for you. Placeholder, add link.</p></div></a>
-              <a class="res"><i class="ri-quill-pen-line"></i><div><h4>Building a skill</h4><p>Teach it once, it remembers, it improves. Placeholder, add link.</p></div></a>
+              <a class="res" href="https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview" target="_blank"><i class="ri-sparkling-2-line"></i><div><h4>Skills, connectors, and plugins</h4><p>Three ways to extend what Claude can do for you.</p></div></a>
+              <a class="res" href="https://support.claude.com/en/articles/12599426-how-to-create-a-skill-with-claude-through-conversation" target="_blank"><i class="ri-quill-pen-line"></i><div><h4>Building a skill</h4><p>Teach it once, it remembers, it improves.</p></div></a>
             </div>
           </div>
 
           <div class="res-group">
             <h3>Copilot</h3>
             <div class="res-list">
-              <a class="res"><i class="ri-microsoft-line"></i><div><h4>Copilot in the Microsoft tools</h4><p>Placeholder, add link.</p></div></a>
-              <a class="res"><i class="ri-team-line"></i><div><h4>Copilot in Teams meetings</h4><p>Placeholder, add link.</p></div></a>
+              <a class="res" href="https://support.microsoft.com/en-us/copilot" target="_blank"><i class="ri-microsoft-line"></i><div><h4>Copilot in the Microsoft tools</h4><p>Microsoft's overview of Copilot across the 365 apps.</p></div></a>
+              <a class="res" href="https://support.microsoft.com/en-us/teams/meetings-events/welcome-to-copilot-in-microsoft-teams" target="_blank"><i class="ri-team-line"></i><div><h4>Copilot in Teams meetings</h4><p>How Copilot works during and after Teams meetings.</p></div></a>
             </div>
           </div>
 
@@ -578,7 +584,9 @@
             <h3>From the retreat and sessions</h3>
             <div class="res-list">
               <a class="res"><i class="ri-slideshow-line"></i><div><h4>The Race Has Already Started</h4><p>WealthCo Annual Retreat, April 2026. Placeholder, add link.</p></div></a>
-              <a class="res"><i class="ri-slideshow-line"></i><div><h4>Session 01 &middot; Know Your Car</h4><p>Placeholder, add link.</p></div></a>
+              <a class="res" href="https://wealthcoportal.sharepoint.com/:u:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20One/Session%20One%20Presentation/Strike-Team-Deck-1-Know-Your-Car.html?d=w48ef6728cd1b4e118272c411b3371c4d&csf=1&web=1&e=NlCr2e" target="_blank"><i class="ri-slideshow-line"></i><div><h4>Session 01 &middot; Know Your Car</h4><p>Session 01 presentation deck.</p></div></a>
+              <a class="res" href="https://wealthcoportal.sharepoint.com/:u:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20Two/Session%20Two%20Presentation/Strike-Team-Deck-2-Make-It-Stick.html?d=wc597ede6d16b45af802d720a7d916bfa&csf=1&web=1&e=oGpUXk" target="_blank"><i class="ri-slideshow-line"></i><div><h4>Session 02 &middot; The Pit Wall</h4><p>Session 02 presentation deck.</p></div></a>
+              <a class="res" href="https://wealthcoportal.sharepoint.com/:u:/r/sites/WC-Operations/Shared%20Documents/Innovation/Initiatives/Innovation%20Programme/Session%20Three/Presentation/Strike-Team-Deck-3-The-Octopus-in-the-Cockpit.html?d=w6ae25611db1f4defae4e2d6fba55df9e&csf=1&web=1&e=YZVNNs" target="_blank"><i class="ri-slideshow-line"></i><div><h4>Session 03 &middot; The Octopus in the Cockpit</h4><p>Session 03 presentation deck.</p></div></a>
             </div>
           </div>
         </div>
@@ -589,6 +597,7 @@
     <section class="panel" data-panel="intake">
       <div class="wrap">
         <div class="sec">
+          <button class="back-link" onclick="go('overview')"><i class="ri-arrow-left-line"></i> Back to overview</button>
           <div class="sec-tag">Submit an idea</div>
           <h2>Put a problem <em>in front of the team</em></h2>
           <p class="sec-intro">Working on something clunky, repetitive, or time-consuming? Describe it and where you think AI might help. No polish needed, a rough note is enough.</p>
